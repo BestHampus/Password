@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Password Protected Site</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            font-size: 28px;
+        }
+        #password-input {
+            padding: 10px;
+            font-size: 16px;
+        }
+        #submit-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Retro Site</h1>
+    <p>Please enter the password to proceed:</p>
+    <input type="password" id="password-input" placeholder="Enter password...">
+    <br><br>
+    <button id="submit-button">Enter</button>
+
+    <script>
+        // Define your correct password here (keep it secure and don't expose it directly in the script)
+        const correctPassword = "your_password_here"; // Replace with your actual password
+
+        // Select elements
+        const passwordInput = document.getElementById('password-input');
+        const submitButton = document.getElementById('submit-button');
+
+        // Add click event listener to submit button
+        submitButton.addEventListener('click', function() {
+            const enteredPassword = passwordInput.value.trim(); // Trim to remove leading/trailing spaces
+
+            // Check if entered password matches the correct password
+            if (enteredPassword === correctPassword) {
+                window.location.href = 'https://besthampus.github.io/Terminal/'; // Replace with your desired website URL
+            } else {
+                alert('Incorrect password! Please try again.'); // Alert for incorrect password (you can change this to a more styled message)
+            }
+        });
+
+        // Optionally, you can also allow pressing Enter key to submit the form
+        passwordInput.addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                submitButton.click();
+            }
+        });
+    </script>
+</body>
+</html>
