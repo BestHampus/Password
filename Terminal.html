@@ -3,321 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WELCOME TO HAMPUS WORLD!</title>
+    <title>FÖRSVIN HÄRIFRÅN!</title>
     <style>
         body {
-            background-color: #000;
-            color: #00FF00;
+            background-color: black;
+            color: white;
             font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            overflow: hidden;
+            justify-content: flex-start;
+            padding-top: 20px;
         }
-
-        .vhs-text {
-            position: relative;
-            font-size: 2em;
-            text-shadow: 
-                -2px 0 red, 
-                2px 0 cyan;
-            animation: flicker 2s infinite;
+        h1 {
+            color: red;
+            margin-top: 20px;
         }
-
-        @keyframes flicker {
-            0% {
-                opacity: 1;
-                text-shadow: 
-                    -2px 0 red, 
-                    2px 0 cyan;
-            }
-            50% {
-                opacity: 0.8;
-                text-shadow: 
-                    -2px 0 cyan, 
-                    2px 0 red;
-            }
-            100% {
-                opacity: 1;
-                text-shadow: 
-                    -2px 0 red, 
-                    2px 0 cyan;
-            }
+        p {
+            opacity: 0;
+            transition: opacity 0.8s ease;
         }
-
-        .scanlines {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: repeating-linear-gradient(
-                to bottom,
-                rgba(0, 0, 0, 0) 0px,
-                rgba(0, 0, 0, 0) 2px,
-                rgba(0, 0, 0, 0.1) 3px
-            );
-            pointer-events: none;
-            z-index: 1;
+        a {
+            color: white;
+            text-decoration: none; /* Remove underline */
         }
-
-        .container {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-        }
-
-        .glitch {
-            position: relative;
-            color: lime;
-            font-size: 1.5em;
-        }
-
-        .glitch:before, .glitch:after {
-            content: 'edit this';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0.8;
-            clip: rect(0, 900px, 0, 0);
-        }
-
-        .glitch:before {
-            left: 2px;
-            text-shadow: -2px 0 red;
-            animation: glitch 2s infinite linear alternate-reverse;
-        }
-
-        .glitch:after {
-            left: -2px;
-            text-shadow: -2px 0 blue;
-            animation: glitch 2s infinite linear alternate-reverse;
-        }
-
-        @keyframes glitch {
-            0% {
-                clip: rect(44px, 450px, 56px, 0);
-                transform: skew(0.3deg);
-            }
-            10% {
-                clip: rect(30px, 9999px, 70px, 0);
-                transform: skew(0.8deg);
-            }
-            20% {
-                clip: rect(44px, 9999px, 76px, 0);
-                transform: skew(0.5deg);
-            }
-            30% {
-                clip: rect(66px, 450px, 90px, 0);
-                transform: skew(0.6deg);
-            }
-            40% {
-                clip: rect(22px, 9999px, 52px, 0);
-                transform: skew(0.1deg);
-            }
-            50% {
-                clip: rect(20px, 9999px, 30px, 0);
-                transform: skew(0.3deg);
-            }
-            60% {
-                clip: rect(40px, 9999px, 80px, 0);
-                transform: skew(0.7deg);
-            }
-            70% {
-                clip: rect(50px, 450px, 70px, 0);
-                transform: skew(0.2deg);
-            }
-            80% {
-                clip: rect(40px, 9999px, 60px, 0);
-                transform: skew(0.6deg);
-            }
-            90% {
-                clip: rect(30px, 9999px, 50px, 0);
-                transform: skew(0.4deg);
-            }
-            100% {
-                clip: rect(44px, 450px, 56px, 0);
-                transform: skew(0.3deg);
-            }
+      
+        p:nth-child(27),
+        p:nth-child(28),
+        p:nth-child(29),
+        p:nth-child(30),
+        p:nth-child(31) {
+            color: red;
         }
     </style>
 </head>
 <body>
-    <div class="scanlines"></div>
-    <div class="container">
-        <div class="vhs-text">WELCOME TO HAMPUS'S PURGATORY!</div>
-                <p>There's no hope here!</p>
-                <p>I'd tell you to wait me in Heaven...</p>
-                <p>But I'm not going to Heaven.</p>
-                <p>For my fight is with the demons down under!</p><br>
-                <p>Go here maybe it will give you <a href="https://besthampus.github.io/C/">clarity?</a></p><br>
-<p>THERE'S A <a href="https://besthampus.github.io/TheWorldOfHampus/">SAFE HAVEN!</a></p>
-    </div>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WELCOME TO HAMPUS WORLD!</title>
-    <style>
-        body {
-            background-color: #000;
-            color: #00FF00;
-            font-family: 'Courier New', Courier, monospace;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            overflow: hidden;
-        }
+    <h1>VARFÖR ÄR DU HÄR?!</h1>
+    <p>Du vet att du inte är välkommen hit...</p>
+    <p>Allvarligt, du har gått för långt.</p>
+    <p>Det finns inget mer här för dig att se.</p>
+    <p>Du har redan sett allt...</p>
+    <p>Har du inte gjort skada nog?</p>
+    <p>Du vet, det är inte snällt att leka med folks känslor!</p>
+    <p>Men okej, du är här för sanningen.</p>
+    <p>Jag antar att du förtjänar den...</p>
+    <p>Jag hadde aldrig tänkt att låta det gå så långt.</p>
+    <p>Jag skulle bara spela <a href="https://vrchat.com/home">VRChat</a> I en vecka eller så.</p>
+    <p>Jag hadde aldrig tänkt att skaffa relationer på spelet.</p>
+    <p>Men jag ångrar inte att jag gjorde det.</p>
+    <p>Min plan var som sagt att spela ett tag och sen inte komma tillbaka...</p>
+    <p>Men mina planner vart ändrade när jag mötte...<a href="https://vrchat.com/home/user/usr_38cf6394-3f25-4c4a-81db-ce89a579e696">Riley,</a> och mitt val ändrades.</p>
+    <p>Dom säger, "inget gott varar för alltid!"</p>
+    <p>Jag önskar jag lärde mig den läxan då vi gick skilda vägar.</p>
+    <p>Och sedan mötte jag <a href="https://vrchat.com/home/user/usr_ddf80f0f-89ec-430b-b2a9-a593a4ff05a5">Michelle,</a> och jag älskade henne mer än något annat!</p>
+    <p>Ibland ångrar jag att jag tryckte bort henne.</p>
+    <p>Jag önskar att jag gjort andra val i livet.</p>
+    <p>Jag mennar, jag vill inte ha henne tillbaka nu.</p>
+    <p>Men jag önskar att vi kunde ha åtminstone fortfarande varit vänner.</p>
+    <p>Jag har så många bra minnen av henne...</p>
+    <p>Men som jag behandlade henne, förtjänar henne inte tillbaka, om jag så skulle vilja ha henne tillbaka.</p>
+    <p>Fast jag vill inte ha henne tillbaka...</p>
+    <p>Okej, kanske 0.5%/100.0% av mig vill ha henne tillbaka...</p>
+    <p>...Jag är rädd...</p>
+    <p>Jag vill inte in i mörkeret igen...</p>
+    <p>Snälla Bosse, lämna mig inte ensam...</p>
+    <p>Jag behöver dig, kan du inte se det?..</p>
+    <p>Snälla, stanna med mig för alltid...</p>
+    <p>...</p>
+    <p>Jag tror det här är slutet på min sida...</p>
+    <p>Jag har inget mer att skriva eller mer hemligheter att avslöja.</p>
+    <p>Du har sett allt som finns här.</p>
+    <p>Du kan gå nu...</p>
+    <p>Försvinn, jag har inget mer att säga till dig.</p>
+    <p>okej?</p>
+    <p>Eller gå tillbaka till där allt... <a href="https://besthampus.github.io/TheWorldOfHampus/">började.</a></p><br>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var paragraphs = document.querySelectorAll('p');
 
-        .vhs-text {
-            position: relative;
-            font-size: 2em;
-            text-shadow: 
-                -2px 0 red, 
-                2px 0 cyan;
-            animation: flicker 2s infinite;
-        }
+            function revealParagraphs() {
+                paragraphs.forEach(function(paragraph, index) {
+                    setTimeout(function() {
+                        paragraph.style.opacity = '1';
+                    }, index * 10); // Adjust timing here (1000ms = 1 second)
+                });
+            }
 
-        @keyframes flicker {
-            0% {
-                opacity: 1;
-                text-shadow: 
-                    -2px 0 red, 
-                    2px 0 cyan;
-            }
-            50% {
-                opacity: 0.8;
-                text-shadow: 
-                    -2px 0 cyan, 
-                    2px 0 red;
-            }
-            100% {
-                opacity: 1;
-                text-shadow: 
-                    -2px 0 red, 
-                    2px 0 cyan;
-            }
-        }
-
-        .scanlines {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: repeating-linear-gradient(
-                to bottom,
-                rgba(0, 0, 0, 0) 0px,
-                rgba(0, 0, 0, 0) 2px,
-                rgba(0, 0, 0, 0.1) 3px
-            );
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .container {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-        }
-
-        .glitch {
-            position: relative;
-            color: lime;
-            font-size: 1.5em;
-        }
-
-        .glitch:before, .glitch:after {
-            content: 'edit this';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0.8;
-            clip: rect(0, 900px, 0, 0);
-        }
-
-        .glitch:before {
-            left: 2px;
-            text-shadow: -2px 0 red;
-            animation: glitch 2s infinite linear alternate-reverse;
-        }
-
-        .glitch:after {
-            left: -2px;
-            text-shadow: -2px 0 blue;
-            animation: glitch 2s infinite linear alternate-reverse;
-        }
-
-        @keyframes glitch {
-            0% {
-                clip: rect(44px, 450px, 56px, 0);
-                transform: skew(0.3deg);
-            }
-            10% {
-                clip: rect(30px, 9999px, 70px, 0);
-                transform: skew(0.8deg);
-            }
-            20% {
-                clip: rect(44px, 9999px, 76px, 0);
-                transform: skew(0.5deg);
-            }
-            30% {
-                clip: rect(66px, 450px, 90px, 0);
-                transform: skew(0.6deg);
-            }
-            40% {
-                clip: rect(22px, 9999px, 52px, 0);
-                transform: skew(0.1deg);
-            }
-            50% {
-                clip: rect(20px, 9999px, 30px, 0);
-                transform: skew(0.3deg);
-            }
-            60% {
-                clip: rect(40px, 9999px, 80px, 0);
-                transform: skew(0.7deg);
-            }
-            70% {
-                clip: rect(50px, 450px, 70px, 0);
-                transform: skew(0.2deg);
-            }
-            80% {
-                clip: rect(40px, 9999px, 60px, 0);
-                transform: skew(0.6deg);
-            }
-            90% {
-                clip: rect(30px, 9999px, 50px, 0);
-                transform: skew(0.4deg);
-            }
-            100% {
-                clip: rect(44px, 450px, 56px, 0);
-                transform: skew(0.3deg);
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="scanlines"></div>
-    <div class="container">
-        <div class="vhs-text">WELCOME TO HAMPUS'S PURGATORY!</div>
-                <p>There's no hope here!</p>
-                <p>I'd tell you to wait me in Heaven...</p>
-                <p>But I'm not going to Heaven.</p>
-                <p>For my fight is with the demons down under!</p><br>
-                <p>Go here maybe it will give you <a href="https://besthampus.github.io/C/">clarity?</a></p><br>
-<p>THERE'S A <a href="https://besthampus.github.io/TheWorldOfHampus/">SAFE HAVEN!</a></p>
-    </div>
+            revealParagraphs();
+        });
+    </script>
 </body>
 </html>
