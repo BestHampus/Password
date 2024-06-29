@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Protected Page</title>
+    <title>Retro Password Protected Site</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000000;
+            color: #ffffff;
             text-align: center;
-            margin-top: 20px;
+            padding-top: 50px;
+        }
+        h1 {
+            font-size: 28px;
         }
         #password-input {
             padding: 10px;
@@ -17,18 +22,20 @@
         #submit-button {
             padding: 10px 20px;
             font-size: 16px;
-            background-color: #007bff;
+            background-color: #4CAF50;
             color: white;
             border: none;
             cursor: pointer;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <h2>Enter the Password to Access</h2>
+    <h1>Welcome to the Retro Site</h1>
+    <p>Please enter the password to proceed:</p>
     <input type="password" id="password-input" placeholder="Enter password...">
     <br><br>
-    <button id="submit-button">Submit</button>
+    <button id="submit-button">Enter</button>
 
     <script>
         // Define your correct password here (keep it secure and don't expose it directly in the script)
@@ -44,7 +51,7 @@
 
             // Check if entered password matches the correct password
             if (enteredPassword === correctPassword) {
-                window.location.href = 'Terminal.html'; // Redirect to the desired URL
+                window.location.href = 'https://besthampus.github.io/Terminal/'; // Replace with your desired website URL
             } else {
                 alert('Incorrect password! Please try again.'); // Alert for incorrect password (you can change this to a more styled message)
             }
